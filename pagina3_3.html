@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Test</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Política para Todos - Cuestionario (Parte 3)</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .header-nav {
+            background-color: #0d6efd;
+        }
+        .card-title {
+            color: #0d6efd;
+        }
+        .footer {
+            background-color: #e9ecef;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .correct {
+            background-color: #d4edda;
+            border-left: 4px solid #155724;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        .incorrect {
+            background-color: #f8d7da;
+            border-left: 4px solid #721c24;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        .question {
+            margin-bottom: 2rem;
+        }
+
+        /* Estilo del certificado */
+        .certificate {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+
+        @media print {
+            .no-print {
+                display: none;
+            }
+            .certificate {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header con navegación -->
+<nav class="navbar navbar-expand-lg header-nav text-white">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">📚 Política para Todos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-white" href="pagina1.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="pagina2.html">Liderazgo</a></li>
+                <li class="nav-item"><a class="nav-link text-white active" href="#">Cuestionario</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contenido principal -->
+<div class="container my-5" id="quizSection">
+    <h1 class="text-center mb-4">📝 Cuestionario Político (Paso 3/3)</h1>
+    <p class="lead text-center">Últimas preguntas antes de tu evaluación final.</p>
+
+    <form id="quizForm">
+        <!-- Pregunta 11 -->
+        <div class="question">
+            <h5>11. ¿Qué es el racismo?</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q11" value="a" required>
+                <label class="form-check-label">Discriminar a personas por su raza o cultura</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q11" value="b">
+                <label class="form-check-label">Valorar más a una cultura sobre otras</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q11" value="c">
+                <label class="form-check-label">Defender los derechos de todos por igual</label>
+            </div>
+            <div class="correct mt-2 d-none">✅ Correcto. El racismo es tratar mal a alguien por su origen étnico o cultural.</div>
+            <div class="incorrect mt-2 d-none">❌ Incorrecto. Discriminar por raza es racismo, no solo valorar culturas.</div>
+        </div>
+
+        <!-- Pregunta 12 -->
+        <div class="question">
+            <h5>12. ¿Cuál de estas NO es una ideología política?</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q12" value="a" required>
+                <label class="form-check-label">Feminismo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q12" value="b">
+                <label class="form-check-label">Liberalismo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q12" value="c">
+                <label class="form-check-label">Anarquismo</label>
+            </div>
+            <div class="correct mt-2 d-none">✅ Correcto. El feminismo es un movimiento social, no una ideología política como tal.</div>
+            <div class="incorrect mt-2 d-none">❌ Incorrecto. El feminismo no es una ideología política completa, sino un movimiento.</div>
+        </div>
+
+        <!-- Pregunta 13 -->
+        <div class="question">
+            <h5>13. ¿Qué significa “neoliberalismo”?</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q13" value="a" required>
+                <label class="form-check-label">Apuesta por privatización y menos regulación estatal</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q13" value="b">
+                <label class="form-check-label">Mayor control del Estado en economía</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q13" value="c">
+                <label class="form-check-label">Rechazo total al capitalismo</label>
+            </div>
+            <div class="correct mt-2 d-none">✅ Correcto. El neoliberalismo implica menos intervención estatal y más mercado libre.</div>
+            <div class="incorrect mt-2 d-none">❌ Incorrecto. El neoliberalismo busca menos control estatal, no más.</div>
+        </div>
+
+        <!-- Pregunta 14 -->
+        <div class="question">
+            <h5>14. ¿Quién fue Hugo Banzer Suárez?</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q14" value="a" required>
+                <label class="form-check-label">Presidente militar que luego se convirtió en civil y gobernó democráticamente</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q14" value="b">
+                <label class="form-check-label">Primer presidente indígena de Bolivia</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q14" value="c">
+                <label class="form-check-label">Líder de la Revolución Nacional de 1952</label>
+            </div>
+            <div class="correct mt-2 d-none">✅ Correcto. Fue dictador entre 1971 y 1978, y luego presidente electo entre 1997 y 2001.</div>
+            <div class="incorrect mt-2 d-none">❌ Incorrecto. Hugo Banzer fue dictador y luego presidente constitucional.</div>
+        </div>
+
+        <!-- Pregunta 15 -->
+        <div class="question">
+            <h5>15. ¿Qué debe hacer un buen líder político?</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q15" value="a" required>
+                <label class="form-check-label">Escuchar al pueblo, rendir cuentas y servir con honestidad</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q15" value="b">
+                <label class="form-check-label">Imponer sus ideas sin consultar a nadie</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="q15" value="c">
+                <label class="form-check-label">Cambiar las reglas para seguir en el poder</label>
+            </div>
+            <div class="correct mt-2 d-none">✅ Correcto. Un buen líder escucha, sirve y no abusa del poder.</div>
+            <div class="incorrect mt-2 d-none">❌ Incorrecto. Un buen líder no abusa del poder ni manipula las leyes.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar respuestas finales</button>
+    </form>
+</div>
+
+<!-- Sección de resultados -->
+<div id="resultSection" class="container my-5 d-none">
+    <h2 class="text-center">📊 Tu resultado final</h2>
+    <p class="lead text-center" id="scoreMessage"></p>
+    <p class="text-center" id="finalMessage"></p>
+
+    <!-- Certificado -->
+    <div id="certificate" class="certificate text-center">
+        <h3>📜 Certificado de Conocimiento Político</h3>
+        <p class="mt-4">Se otorga este certificado a:</p>
+        <h4 id="userName">[Nombre del usuario]</h4>
+        <p>Por haber obtenido un puntaje destacado en el cuestionario de conocimientos políticos básicos.</p>
+        <p><strong>Puntaje:</strong> <span id="certScore"></span>/15</p>
+        <p class="mt-4">Este reconocimiento simboliza su compromiso con la educación cívica y democrática.</p>
+        <p><em>Firmado digitalmente por:</em><br><strong>Bolivia te lo agradece</strong></p>
+        <button class="btn btn-success mt-4 no-print" onclick="window.print()">🖨️ Imprimir certificado</button>
+    </div>
+</div>
+
+<script>
+    const form = document.getElementById('quizForm');
+    const quizSection = document.getElementById('quizSection');
+    const resultSection = document.getElementById('resultSection');
+    const scoreMessage = document.getElementById('scoreMessage');
+    const finalMessage = document.getElementById('finalMessage');
+    const userName = document.getElementById('userName');
+    const certScore = document.getElementById('certScore');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        let correctCount = 0;
+        const correctAnswers = ['a','a','a','a','a'];
+
+        for (let i = 0; i < correctAnswers.length; i++) {
+            const selected = document.querySelector(`input[name=q${i+11}]:checked`);
+            if (selected && selected.value === correctAnswers[i]) {
+                correctCount++;
+                document.querySelectorAll('.question')[i].querySelector('.correct').classList.remove('d-none');
+                document.querySelectorAll('.question')[i].querySelector('.incorrect').classList.add('d-none');
+            } else {
+                document.querySelectorAll('.question')[i].querySelector('.incorrect').classList.remove('d-none');
+                document.querySelectorAll('.question')[i].querySelector('.correct').classList.add('d-none');
+            }
+        }
+
+        // Calcular puntaje total
+        const score1 = parseInt(localStorage.getItem('score_part1')) || 0;
+        const score2 = parseInt(localStorage.getItem('score_part2')) || 0;
+        const totalScore = score1 + score2 + correctCount;
+
+        // Mostrar resultados
+        quizSection.classList.add('d-none');
+        resultSection.classList.remove('d-none');
+
+        scoreMessage.textContent = `Obtuviste ${totalScore} puntos de 15 posibles.`;
+
+        if (totalScore >= 12) {
+            finalMessage.innerHTML = `<span class="text-success">¡Felicitaciones! Has demostrado un gran conocimiento político.</span>`;
+            userName.textContent = prompt("Ingresa tu nombre para el certificado:");
+            certScore.textContent = totalScore;
+            setTimeout(() => window.print(), 1000);
+            setTimeout(() => window.location.href = 'pagina1.html', 10000); // Volver a página 1 después de 10 segundos
+        } else {
+            finalMessage.innerHTML = `<span class="text-danger">No alcanzaste el puntaje mínimo. Vamos a repasar juntos para aprender más.</span>`;
+            setTimeout(() => window.location.href = 'pagina1.html', 5000);
+        }
+    });
+</script>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
